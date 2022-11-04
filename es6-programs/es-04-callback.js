@@ -2,42 +2,31 @@
 // version 1, synchronous way 
 
 
-function divide(n1, n2, callback) {
+function divide(n1, n2) {
 
-    if (typeof callback != 'function') {
-        throw "Callback should be a function or you did not pass";
-    }
-    setTimeout(() => {
+    return new Promise((resolve, reject) => {
         if (typeof n1 != 'number') {
-            callback("Please Enter first arg as number");
-            return;
+            reject("Please Enter first arg as number");
         }
+
         if (typeof n2 != 'number') {
-            callback("Please enter second arg as number");
-            return;
+            reject("Please enter second arg as number");
+
         }
+
         if (n2 === 0) {
-            callback("Pls dont divide by zero");
-            return;
+            reject("Pls dont divide by zero");
         }
 
-        callback(null, n1 / n2);
-    }, 0);
-
+        resolve(n1 / n2);
+    })
 }
 
 console.log("Start ");
 let a = 10;
-let b = 5;
+let b = 0;
 
-
-
-let c = divide(a, b, (err, res) => {
-    if (err) {
-        console.log("Error  " + err);
-    } else {
-        console.log("Result " + res);
-    }
-});
-console.log("Result ", c);
+divide(a, b)
+    .then(result => console.log("Result : " + result))
+    .catch(err => console.log("Error processing " + err));
 console.log("End ")
