@@ -75,8 +75,6 @@ console.log(func.getCount());
 
 //////////////////////////////////// 
 
-
-
 function fnCounter1() {
     let count = 0;
     return {
