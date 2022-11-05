@@ -1,9 +1,14 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "name": "Naveen",
-            "city": "Bengaluru"
-        }
-    ]
+  "users": [
+    {
+      "id": 1,
+      "name": "Naveen",
+      "city": "Bengaluru"
+    },
+    {
+      "id": 2,
+      "name": "Santosh",
+      "city": "Bengaluru"
+    }
+  ]
 }
