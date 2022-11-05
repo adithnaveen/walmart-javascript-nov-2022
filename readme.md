@@ -103,7 +103,31 @@ function divide(n1, n2, callback) {
 
 ```
 
+- scoping 
 
+```
+    {
+        int x; 
+        {
+            int y; 
+            print x 
+        }
+        {
+            int z; 
+            print x; 
+            print y; does not work 
+        }
+    }
+
+    function f1 (val1) {
+        function f2 (val2) {
+            val2 is valid 
+            val1 is also valid 
+        }
+    }
+
+
+```
 
 - Links 
 
