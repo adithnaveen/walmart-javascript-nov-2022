@@ -40,6 +40,25 @@ class Person {
     }
 
 }
+
+
+class Employee extends Person {
+    constructor(name, city, designation) {
+        // if you have super usage then it has to be first statement in the 
+        // function 
+        super(name, city);
+        this.designation = designation;
+    }
+
+    display() {
+        super.display();
+        console.log("Designation " + this.designation);
+    }
+}
+
+
+
+
 // p1, p2 are instatance scope 
 let p1 = new Person("Rajesh", "Chennai");
 p1.display();
@@ -51,3 +70,7 @@ Person.commonFunction();
 
 let p2 = new Person("Kumar K", "Bengaluru");
 p2.display();
+console.log("========================================");
+
+let e1 = new Employee("Babu", "Mysuru", "Manager");
+e1.display();

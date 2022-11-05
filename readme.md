@@ -135,3 +135,6 @@ function divide(n1, n2, callback) {
 
 - es6 
 > https://kangax.github.io/compat-table/es6/
+
+- mock server json-server 
+> https://www.npmjs.com/package/json-server
