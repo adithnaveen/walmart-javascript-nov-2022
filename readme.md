@@ -125,9 +125,37 @@ function divide(n1, n2, callback) {
             val1 is also valid 
         }
     }
+```
 
+
+
+- modules 
 
 ```
+    <html>
+        <head>
+            <script scr="./script/script.js"></script>
+            <script scr="./script/script.js"></script>
+            <script scr="./script/script.js"></script>
+            <script scr="./script/script.js"></script>
+            <script scr="./script/script.js"></script>
+            <script scr="./script/script.js"></script>
+            <script scr="./script/script.js"></script>
+            
+        </head>
+
+        <body>
+        </body>
+    </html>
+
+    - script 
+        - script.js 
+            function hi() {
+            
+                }
+
+```
+
 
 - Links 
 

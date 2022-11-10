@@ -30,3 +30,10 @@ function getUserById(evt) {
         .then(data => console.log(data));
     // then render on the screen 
 }
+function getAllUsers(evt) {
+
+    fetch("http://localhost:3000/users/")
+        .then(resp => resp.json())
+        .then(data => console.log(data));
+    // then render on the screen 
+}
